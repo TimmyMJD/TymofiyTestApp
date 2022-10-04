@@ -1,4 +1,4 @@
-package com.adgif.timofiytestapp.ui.fragments.adapter
+package com.adgif.timofiytestapp.ui.view.adapter
 
 import androidx.recyclerview.widget.DiffUtil
 

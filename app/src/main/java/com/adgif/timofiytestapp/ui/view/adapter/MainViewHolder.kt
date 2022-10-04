@@ -1,4 +1,4 @@
-package com.adgif.timofiytestapp.ui.fragments.adapter
+package com.adgif.timofiytestapp.ui.view.adapter
 
 import android.view.View
 import android.widget.TextView

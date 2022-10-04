@@ -4,6 +4,6 @@
     app:startDestination="@id/mainFragment">
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.adgif.timofiytestapp.ui.fragments.MainFragment"
+        android:name="com.adgif.timofiytestapp.ui.view.MainFragment"
         android:label="MainFragment" />
 </navigation>

@@ -1,9 +1,8 @@
-package com.adgif.timofiytestapp.ui.fragments.adapter
+package com.adgif.timofiytestapp.ui.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import androidx.recyclerview.widget.RecyclerView
 import com.adgif.timofiytestapp.R
 
 class MainAdapter: ListAdapter<String, MainViewHolder>(MainDiffUtil()) {

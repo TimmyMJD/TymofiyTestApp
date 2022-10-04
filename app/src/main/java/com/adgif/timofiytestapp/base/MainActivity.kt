@@ -1,9 +1,11 @@
-package com.adgif.timofiytestapp.ui.activity
+package com.adgif.timofiytestapp.base
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.adgif.timofiytestapp.R
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
