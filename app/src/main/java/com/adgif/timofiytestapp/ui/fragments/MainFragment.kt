@@ -22,7 +22,6 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             layoutManager = LinearLayoutManager(requireContext())
             adapter = MainAdapter()
         }
-
     }
 
     private fun updateData(list: List<String>){
