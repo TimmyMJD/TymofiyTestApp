@@ -1,7 +1,7 @@
-package com.adgif.timofiytestapp.data.remote
+package com.adgif.timofiytestapp.data.remote.api
 
-import com.adgif.timofiytestapp.data.remote.pojo.MyResponse
-import retrofit2.Call
+import com.adgif.timofiytestapp.data.remote.response.MyResponse
+import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -12,5 +12,5 @@ interface ApiService {
         @Query("api_key") apiKey: String = "Z4pYJhdN94tVGpBb174s0KSQKnl93THL",
         @Query("limit") limit: Int = 25,
         @Query("rating") rating: String = "g"
-    ): Call<MyResponse>
+    ): Single<MyResponse>
 }

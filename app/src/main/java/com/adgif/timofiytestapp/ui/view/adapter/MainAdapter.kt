@@ -4,8 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import com.adgif.timofiytestapp.R
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class MainAdapter: ListAdapter<String, MainViewHolder>(MainDiffUtil()) {
+class MainAdapter @Inject constructor(): ListAdapter<String, MainViewHolder>(MainDiffUtil()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
         MainViewHolder(LayoutInflater.from(parent.context)
