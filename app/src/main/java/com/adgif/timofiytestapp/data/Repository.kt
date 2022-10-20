@@ -3,9 +3,10 @@ package com.adgif.timofiytestapp.data
 import com.adgif.timofiytestapp.data.local.AppDatabase
 import com.adgif.timofiytestapp.data.local.mapper.toDomain
 import com.adgif.timofiytestapp.data.local.mapper.toEntity
-import com.adgif.timofiytestapp.data.model.Gif
+import com.adgif.timofiytestapp.domain.model.Gif
 import com.adgif.timofiytestapp.data.remote.api.ApiService
 import com.adgif.timofiytestapp.data.remote.mapper.toDomain
+import com.adgif.timofiytestapp.domain.IRepository
 import io.reactivex.Completable
 import io.reactivex.Observable
 import io.reactivex.Single

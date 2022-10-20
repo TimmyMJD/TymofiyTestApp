@@ -1,6 +1,6 @@
-package com.adgif.timofiytestapp.data
+package com.adgif.timofiytestapp.domain
 
-import com.adgif.timofiytestapp.data.model.Gif
+import com.adgif.timofiytestapp.domain.model.Gif
 import io.reactivex.Completable
 import io.reactivex.Observable
 

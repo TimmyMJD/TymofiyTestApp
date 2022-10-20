@@ -10,9 +10,9 @@ data class GifEntity (
 )
 
 data class DataImage (
-    val ogImage: ogImage
+    val ogImage: OgImage
 )
 
-data class ogImage (
+data class OgImage (
     val url: String
 )

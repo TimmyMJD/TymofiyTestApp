@@ -2,7 +2,7 @@ package com.adgif.timofiytestapp.ui.view_model
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.adgif.timofiytestapp.data.IRepository
+import com.adgif.timofiytestapp.domain.IRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject

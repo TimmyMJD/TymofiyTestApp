@@ -1,6 +1,6 @@
 package com.adgif.timofiytestapp.di
 
-import com.adgif.timofiytestapp.data.IRepository
+import com.adgif.timofiytestapp.domain.IRepository
 import com.adgif.timofiytestapp.data.Repository
 import com.adgif.timofiytestapp.data.local.AppDatabase
 import com.adgif.timofiytestapp.data.remote.api.ApiService

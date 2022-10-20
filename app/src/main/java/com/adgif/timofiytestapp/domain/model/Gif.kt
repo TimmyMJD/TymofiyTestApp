@@ -1,13 +1,13 @@
-package com.adgif.timofiytestapp.data.model
+package com.adgif.timofiytestapp.domain.model
 
 data class Gif (
     val images: DataImage
 )
 
 data class DataImage (
-    val ogImage: ogImage
+    val ogImage: OgImage
 )
 
-data class ogImage (
+data class OgImage (
     val url: String
 )

@@ -4,14 +4,15 @@ import com.google.gson.annotations.SerializedName
 
 data class GifApiModel (
     @SerializedName("images")
-    val images: DataImage
+    val images: DataImageApiModel
 )
 
-data class DataImage (
+data class DataImageApiModel (
     @SerializedName("original")
-    val ogImage: ogImage
+    val ogImage: OgImageApiModel
 )
 
-data class ogImage (
+data class OgImageApiModel (
+    @SerializedName("url")
     val url: String
 )
