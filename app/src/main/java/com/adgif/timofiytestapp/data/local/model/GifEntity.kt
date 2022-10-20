@@ -9,6 +9,7 @@ data class GifEntity (
     val images: DataImage
 )
 
+
 data class DataImage (
     val ogImage: OgImage
 )
