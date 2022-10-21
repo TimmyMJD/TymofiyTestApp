@@ -1,19 +1,26 @@
 package com.adgif.timofiytestapp.data.local.model
 
+import androidx.room.ColumnInfo
+import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "gif")
-data class GifEntity (
+data class GifEntity(
     @PrimaryKey
-    val images: DataImage
+    @ColumnInfo( name = "id")
+    val id: Int,
+
+    @Embedded(prefix = "images_")
+    val images: DataImageEmbedded
 )
 
-
-data class DataImage (
-    val ogImage: OgImage
+data class DataImageEmbedded(
+    @Embedded(prefix = "original_")
+    val ogImage: OgImageEmbedded
 )
 
-data class OgImage (
+data class OgImageEmbedded(
+    @ColumnInfo( name = "url")
     val url: String
 )

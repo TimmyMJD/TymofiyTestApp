@@ -7,6 +7,7 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.adgif.timofiytestapp.R
+import com.adgif.timofiytestapp.ui.model.GifUIModel
 import com.adgif.timofiytestapp.ui.view.adapter.MainAdapter
 import com.adgif.timofiytestapp.ui.view_model.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -34,7 +35,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         }
     }
 
-    private fun updateData(list: List<String>) {
+    private fun updateData(list: List<GifUIModel>) {
         (recyclerView.adapter as? MainAdapter)?.submitList(list)
     }
 

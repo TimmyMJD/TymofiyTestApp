@@ -9,15 +9,16 @@ import com.adgif.timofiytestapp.domain.model.OgImage
 
 fun GifApiModel.toDomain() =
     Gif(
+        id = this.id,
         images = this.images.toDomain()
-    )
-
-fun OgImageApiModel.toDomain() =
-    OgImage(
-        url = this.url
     )
 
 fun DataImageApiModel.toDomain() =
     DataImage(
         ogImage = this.ogImage.toDomain()
+    )
+
+fun OgImageApiModel.toDomain() =
+    OgImage(
+        url = this.url
     )
