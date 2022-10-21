@@ -1,7 +1,7 @@
 package com.adgif.timofiytestapp.ui.model
 
 data class GifUIModel(
-    val id: Int,
+    val id: String,
     val images: DataImageUIModel
 )
 

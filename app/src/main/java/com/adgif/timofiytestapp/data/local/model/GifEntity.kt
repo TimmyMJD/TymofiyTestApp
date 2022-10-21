@@ -9,7 +9,7 @@ import androidx.room.PrimaryKey
 data class GifEntity(
     @PrimaryKey
     @ColumnInfo( name = "id")
-    val id: Int,
+    val id: String,
 
     @Embedded(prefix = "images_")
     val images: DataImageEmbedded

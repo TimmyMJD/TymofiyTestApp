@@ -1,7 +1,7 @@
 package com.adgif.timofiytestapp.domain.model
 
 data class Gif(
-    val id: Int,
+    val id: String,
     val images: DataImage
 )
 

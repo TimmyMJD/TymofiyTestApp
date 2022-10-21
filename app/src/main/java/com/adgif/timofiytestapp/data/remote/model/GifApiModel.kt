@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class GifApiModel(
     @SerializedName("id")
-    val id: Int,
+    val id: String,
 
     @SerializedName("images")
     val images: DataImageApiModel
