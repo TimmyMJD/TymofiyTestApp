@@ -22,6 +22,8 @@ fun DataImageEmbedded.toDomain() =
 
 fun OgImageEmbedded.toDomain() =
     OgImage(
+        height = this.height,
+        width = this.width,
         url = this.url
     )
 
@@ -38,5 +40,7 @@ fun DataImage.toEntity() =
 
 fun OgImage.toEntity() =
     OgImageEmbedded(
+        height = this.height,
+        width = this.width,
         url = this.url
     )

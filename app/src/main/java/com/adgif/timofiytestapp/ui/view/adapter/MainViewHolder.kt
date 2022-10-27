@@ -14,6 +14,7 @@ class MainViewHolder(parentView: View) : RecyclerView.ViewHolder(parentView) {
     fun onBind(model: GifUIModel) {
         Glide.with(ivGif.context)
             .load(model.images.ogImage.url)
+            .override(model.images.ogImage.width.toInt(),model.images.ogImage.height.toInt())
             .into(ivGif)
     }
 

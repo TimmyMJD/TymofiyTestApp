@@ -10,5 +10,7 @@ data class DataImage(
 )
 
 data class OgImage(
+    val height: String,
+    val width: String,
     val url: String
 )

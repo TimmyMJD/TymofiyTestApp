@@ -20,5 +20,7 @@ fun DataImageApiModel.toDomain() =
 
 fun OgImageApiModel.toDomain() =
     OgImage(
+        height = this.height,
+        width = this.width,
         url = this.url
     )

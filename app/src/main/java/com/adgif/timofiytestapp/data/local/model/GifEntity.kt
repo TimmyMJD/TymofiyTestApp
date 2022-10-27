@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "gif")
 data class GifEntity(
     @PrimaryKey
-    @ColumnInfo( name = "id")
+    @ColumnInfo(name = "id")
     val id: String,
 
     @Embedded(prefix = "images_")
@@ -21,6 +21,12 @@ data class DataImageEmbedded(
 )
 
 data class OgImageEmbedded(
-    @ColumnInfo( name = "url")
+    @ColumnInfo(name = "height")
+    val height: String,
+
+    @ColumnInfo(name = "width")
+    val width: String,
+
+    @ColumnInfo(name = "url")
     val url: String
 )

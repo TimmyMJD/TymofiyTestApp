@@ -10,5 +10,7 @@ data class DataImageUIModel(
 )
 
 data class OgImageUIModel(
+    val height: String,
+    val width: String,
     val url: String
 )

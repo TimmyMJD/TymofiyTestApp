@@ -1,5 +1,6 @@
 package com.adgif.timofiytestapp.ui.mapper
 
+import com.adgif.timofiytestapp.data.remote.mapper.toDomain
 import com.adgif.timofiytestapp.domain.model.DataImage
 import com.adgif.timofiytestapp.domain.model.Gif
 import com.adgif.timofiytestapp.domain.model.OgImage
@@ -20,5 +21,7 @@ fun DataImage.toUiModel() =
 
 fun OgImage.toUiModel() =
     OgImageUIModel(
+        height = this.height,
+        width = this.width,
         url = this.url
     )
