@@ -12,10 +12,10 @@ class MainViewHolder(parentView: View) : RecyclerView.ViewHolder(parentView) {
     private val ivGif = parentView.findViewById<ImageView>(R.id.ivGif)
 
     fun onBind(model: GifUIModel) {
-        Glide.with(ivGif.context)
-            .load(model.images.ogImage.url)
-            .override(model.images.ogImage.width.toInt(),model.images.ogImage.height.toInt())
-            .into(ivGif)
+        model.images.ogImage.run {
+            Glide.with(ivGif.context)
+                .load(url)
+                .into(ivGif)
+        }
     }
-
 }

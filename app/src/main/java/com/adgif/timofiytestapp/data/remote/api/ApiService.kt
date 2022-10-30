@@ -10,7 +10,18 @@ interface ApiService {
     @GET("gifs/trending")
     fun getTrending(
         @Query("api_key") apiKey: String = "Z4pYJhdN94tVGpBb174s0KSQKnl93THL",
-        @Query("limit") limit: Int = 25,
+        @Query("limit") limit: Int,
+        @Query("offset") offset: Int,
         @Query("rating") rating: String = "g"
+    ): Single<MyResponse>
+
+    @GET("gifs/search")
+    fun getSearch(
+        @Query("api_key") apiKey: String = "Z4pYJhdN94tVGpBb174s0KSQKnl93THL",
+        @Query("q") query: String = "",
+        @Query("limit") limit: Int = 25,
+        @Query("offset") offset: Int = 0,
+        @Query("rating") rating: String = "g",
+        @Query("lang") language: String = "en"
     ): Single<MyResponse>
 }

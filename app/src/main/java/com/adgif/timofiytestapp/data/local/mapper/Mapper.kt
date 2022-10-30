@@ -1,13 +1,13 @@
 package com.adgif.timofiytestapp.data.local.mapper
 
-import com.adgif.timofiytestapp.data.local.model.*
-import com.adgif.timofiytestapp.data.remote.mapper.toDomain
-import com.adgif.timofiytestapp.data.remote.model.DataImageApiModel
-import com.adgif.timofiytestapp.data.remote.model.GifApiModel
-import com.adgif.timofiytestapp.data.remote.model.OgImageApiModel
+import com.adgif.timofiytestapp.data.local.model.DataImageEmbedded
+import com.adgif.timofiytestapp.data.local.model.GifEntity
+import com.adgif.timofiytestapp.data.local.model.OgImageEmbedded
+import com.adgif.timofiytestapp.data.local.model.PaginationEntity
 import com.adgif.timofiytestapp.domain.model.DataImage
 import com.adgif.timofiytestapp.domain.model.Gif
 import com.adgif.timofiytestapp.domain.model.OgImage
+import com.adgif.timofiytestapp.domain.model.Pagination
 
 fun GifEntity.toDomain() =
     Gif(
@@ -27,6 +27,14 @@ fun OgImageEmbedded.toDomain() =
         url = this.url
     )
 
+fun PaginationEntity.toDomain() =
+    Pagination(
+        id = this.id,
+        totalCount = this.totalCount,
+        count = this.count,
+        offset = this.offset
+    )
+
 fun Gif.toEntity() =
     GifEntity(
         images = this.images.toEntity(),
@@ -43,4 +51,12 @@ fun OgImage.toEntity() =
         height = this.height,
         width = this.width,
         url = this.url
+    )
+
+fun Pagination.toEntity() =
+    PaginationEntity(
+        id = this.id,
+        totalCount = this.totalCount,
+        count = this.count,
+        offset = this.offset
     )

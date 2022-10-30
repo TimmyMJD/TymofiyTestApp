@@ -10,9 +10,9 @@ import io.reactivex.Single
 
 @Dao
 interface GifDao {
-    @Query("SELECT * FROM gif")
+    @Query("SELECT * FROM gif ORDER BY auto_generate_id")
     fun getGifEntites(): List<GifEntity>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(gifEntites : List<GifEntity>)
 }

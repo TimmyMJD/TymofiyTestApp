@@ -7,7 +7,10 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "gif")
 data class GifEntity(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "auto_generate_id")
+    var autoGenerateId: Int? = null,
+
     @ColumnInfo(name = "id")
     val id: String,
 
